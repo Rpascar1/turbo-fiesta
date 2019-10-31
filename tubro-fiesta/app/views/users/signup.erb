@@ -1,0 +1,22 @@
+<h1>Welcome to Turbo Fiesta please log in below </h1><br>
+
+<% if flash.has?(:message)%>
+    <%flash[:message].each do |message|%>
+      <%message%>
+  <%end%>
+<%end%>
+
+<form action="/signup" method="post">
+
+  <label for="username">Username<input type="text" name="username" id="username"</label><br>
+  <label for="email">Email<input type="text" name="email" id="email"</label><br>
+  <label for="password">Password<input type="password" name="password" id="password"></label><br>
+
+  <input type="submit" name="submit" id="submit">
+
+</form>
+
+
+<br>
+
+<a href="/login">If you already have an account please log in here.</a>

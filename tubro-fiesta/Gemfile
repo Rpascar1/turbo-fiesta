@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 gem 'sinatra'
 gem 'activerecord', '~> 4.2', '>= 4.2.6', :require => 'active_record'
@@ -11,8 +11,9 @@ gem 'shotgun'
 gem 'pry'
 gem 'bcrypt'
 gem 'tux'
+gem 'rack-flash3'
 
-group :test do
+group :test, :development do
   gem 'rspec'
   gem 'capybara'
   gem 'rack-test'
