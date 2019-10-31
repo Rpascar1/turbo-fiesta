@@ -1,4 +1,4 @@
-class UserController < ApplicationController
+class User_Controller < Application_Controller
 
  get "/users/:id" do #show
   if @user = User.find(params[:id])
@@ -8,7 +8,7 @@ class UserController < ApplicationController
   end
  end
 
-get '/singup' do
+get '/signup' do
     erb "users/signup" #new
 end
 
